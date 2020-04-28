@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h3>Bienvenue sur notre site</h3>
+        <button class="btn btn-success" onClick="send()">Il faut cliquer ici !</button>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        function send() {
+            console.log('clicked');
+        }
+    </script>
+{% endblock %}
